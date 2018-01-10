@@ -1,0 +1,33 @@
+.userNumber {
+  float: left;
+  width: 200px;
+  height: 80px;
+  margin: 10px;
+  background-color: lightgray;
+}
+
+.winLoss {
+  float: left;
+  width: 200px;
+  height: 80px;
+  margin: 10px;
+  background-color: lightgray;
+}
+
+img {
+	height: 150px;
+	width: 150px;
+	margin: 10px;
+}
+
+.score {
+	float: left;
+  width: 400px;
+  height: 90px;
+  margin: 10px;
+  background-color: lightgray;
+}
+
+.card {
+	margin: 10px;
+}

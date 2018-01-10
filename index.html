@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework #4</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+ 
+
+
+ </head>
+
+ 	<body>
+ 		<!--Header and Directions-->
+ 		<div class="card">
+ 			<div class="card-body">
+ 				CRYSTAL GAME
+ 			</div>
+ 		</div>
+ 			<div> 
+  <div class="card text-black bg-warning mb-3" style="max-width: 18rem;">
+	  <div class="card-body">
+	    <h5 class="card-title">Directions</h5>
+	    <p class="card-text">
+	    	<ul>
+	 			<li>You will be given a random number at the start of the game.</li>
+	 			<li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+	 			<li>You win the game by matching you total score to random number, you lose the game if your total score goes above the random number.</li>
+	 			<li>The value of each crystal is hidden from you until you click on it.</li>
+	 			<li>Each time when the game starts, the game will change the values of each crystal</li>
+	 		</ul>
+	 	</p>
+	  </div>
+  </div>
+
+ 			<!--Random User number and win/loss count-->
+ 	<div class="userNumber">
+ 	</div>
+	 	<div class="winLoss">
+	 		<p class="win">Wins: </p>
+	 		<p class="loss">Losses: </p>
+	 	</div>
+	 	<br><br><br><br><br>
+
+	 		<!--Crystal Images-->
+	 		<container>
+	 		<div>
+	 			<img id="crystal-1" src="http://www.facets.la/wallpaper/W_2013_090.jpg"></img>
+	 			<img id="crystal-2" src="https://i.pinimg.com/originals/5a/ec/b8/5aecb81e291d92021042ca080eb33ece.jpg"></img>
+	 			<img id="crystal-3" src="https://www.extremetech.com/wp-content/uploads/2013/07/quartz-crystal-640x353.jpg"></img>
+	 			<img id="crystal-4" src="http://2.bp.blogspot.com/-qW-ICqQxoDQ/VLMLFFoV3WI/AAAAAAAAZMI/AQ1ia5hFRKg/s1600/Borax%2BCrystal%2BDIY%2BClose.jpg"></img>
+	 		</div>
+	 	</container>
+
+			<!--Score Counter-->
+			<div class="score">
+				<p>Your total score is: </p>
+				<span id="Number"></span>
+			</div>
+		</div>
+
+	</body>
+</html>
+				
