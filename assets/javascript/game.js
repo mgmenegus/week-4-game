@@ -50,21 +50,35 @@ var total = 0;
 				//Wins & losses
 
 				function check(){
-					if (total == userNumber)
+					if (total == userTarget)
 					{
 						wins++;
 						$(".win").html(wins);
 						alert("Winner!");
 					}
 
-					if (total > userNumber)
+					if (total > userTarget)
 					{
 						losses++;
 						$(".loss").html(losses);
 						alert("Loser!");
 					}	
-				
 
+
+				}
+
+				function reset(){
+					total = 0;
+					userTarget=getRandomIntInclusive(19,120);
+					$(".userNumber").html(userTarget);
+					c1 = getRandomIntInclusive(1,12);
+						$("#crystal-1").attr("value", c1);
+					c2 = getRandomIntInclusive(1,12);
+						$("#crystal-2").attr("value", c2);
+					c3 = getRandomIntInclusive(1,12);
+						$("#crystal-3").attr("value", c3);
+					c4 = getRandomIntInclusive(1,12);
+						$("#crystal-4").attr("value", c4);
 				}
 
 });
