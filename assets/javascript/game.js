@@ -23,43 +23,47 @@ var total = 0;
 				total = c1 + total;
 				console.log(total);
 				$(".score").html("Your total score is: " + total);
+				check();
 			});
 
-			$("#crystal-2").click(function() {
+			$("#crystal-2").click(function() {	
 				total = c2 + total;
 				console.log(total);
 				$(".score").html("Your total score is: " + total);
+				check();
 			});
 
 			$("#crystal-3").click(function() {
 				total = c3 + total;
 				console.log(total);
 				$(".score").html("Your total score is: " + total);
+				check();
 			});
 
 			$("#crystal-4").click(function() {
 				total = c4 + total;
 				console.log(total);
 				$(".score").html("Your total score is: " + total);
+				check();
 			});
 
 				//Wins & losses
 
 				function check(){
-					if (total == userNumber);
+					if (total == userNumber)
 					{
 						wins++;
 						$(".win").html(wins);
 						alert("Winner!");
-						console.log(check);
 					}
 
-					if (total > userNumber);
+					if (total > userNumber)
 					{
 						losses++;
 						$(".loss").html(losses);
 						alert("Loser!");
 					}	
+				
 
 				}
 
