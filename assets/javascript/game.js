@@ -24,6 +24,7 @@ var total = 0;
 				console.log(total);
 				$(".score").html("Your total score is: " + total);
 				check();
+				
 			});
 
 			$("#crystal-2").click(function() {	
@@ -31,6 +32,7 @@ var total = 0;
 				console.log(total);
 				$(".score").html("Your total score is: " + total);
 				check();
+				
 			});
 
 			$("#crystal-3").click(function() {
@@ -38,6 +40,7 @@ var total = 0;
 				console.log(total);
 				$(".score").html("Your total score is: " + total);
 				check();
+				
 			});
 
 			$("#crystal-4").click(function() {
@@ -45,6 +48,7 @@ var total = 0;
 				console.log(total);
 				$(".score").html("Your total score is: " + total);
 				check();
+				
 			});
 
 				//Wins & losses
@@ -53,15 +57,19 @@ var total = 0;
 					if (total == userTarget)
 					{
 						wins++;
-						$(".win").html(wins);
+						$(".win").html("Wins: " + wins);
 						alert("Winner!");
+						reset();
+						
 					}
 
 					if (total > userTarget)
 					{
 						losses++;
-						$(".loss").html(losses);
+						$(".loss").html("Loss: " + losses);
 						alert("Loser!");
+						reset();
+
 					}	
 
 
@@ -71,14 +79,15 @@ var total = 0;
 					total = 0;
 					userTarget=getRandomIntInclusive(19,120);
 					$(".userNumber").html(userTarget);
-					c1 = getRandomIntInclusive(1,12);
-						$("#crystal-1").attr("value", c1);
-					c2 = getRandomIntInclusive(1,12);
-						$("#crystal-2").attr("value", c2);
-					c3 = getRandomIntInclusive(1,12);
-						$("#crystal-3").attr("value", c3);
-					c4 = getRandomIntInclusive(1,12);
-						$("#crystal-4").attr("value", c4);
+
+						c1 = getRandomIntInclusive(1,12);
+							$("#crystal-1").attr("value", c1);
+						c2 = getRandomIntInclusive(1,12);
+							$("#crystal-2").attr("value", c2);
+						c3 = getRandomIntInclusive(1,12);
+							$("#crystal-3").attr("value", c3);
+						c4 = getRandomIntInclusive(1,12);
+							$("#crystal-4").attr("value", c4);
 				}
 
 });
